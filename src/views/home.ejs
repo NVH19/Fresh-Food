@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon_ff.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Fresh Food</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="setting" id="setting">
+                <div class="log">
+                    <i class="fa-regular fa-bell" style="font-size: 14px;"></i>
+                    Notifications
+                </div>
+                <a href="https://www.facebook.com/" class="log">
+                    <i class="fa-solid fa-phone icon" style="font-size: 13px;"></i>
+                    Contact
+                </a>
+                <div class="user" id="user">
+                    <a href="signUp" class="log">Signup</a>
+                    <a href="login" class="log">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="left">
+                <a href="/"><img src="/images/icons/pngtree-fresh-food-logo.png" alt="" style="width: 150px; height: 90px;"></a>
+            </div>
+            <div class="right">
+                <ul class="item">
+                    <li><a href="" class="menu-item">FRUITS</a></li>
+                    <li><a href="" class="menu-item">VEGETABLES</a></li>
+                    <li><a href="" class="menu-item">MEAT</a></li>
+                    <li><a href="" class="menu-item">OTHER</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <i class="fa-duotone fa-solid fa-magnifying-glass icon"></i>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="slides-show">
+            <div class="slides">
+                <img src="/images/banners/pexels-mali-65174.jpg" alt="carot" width="700px" height="340px">
+            </div>
+            <div class="slides">
+                <img src="/images/banners/pexels-kaip-594137.jpg" alt="" width="700px" height="340px">
+            </div>
+            <div class="slides">
+                <img src="/images/banners/pexels-pixabay-68525.jpg" alt="" width="700px" height="340px">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/images/banners/banner_img1.jpg" alt="" style="margin-bottom: 5px;">
+            <img src="/images/banners/banner_img3.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h2>Collections</h2>
+            </div>
+            <div class="category">
+                <div class="category-list" id="category-list">
+                    <!-- <button class="prev2" onclick="scrollLeft()">&#10094;</button> -->
+                    <!-- <div class="category-item">
+                        <div class="category-img" style="background-image: url('/images/categories/other.jpg');"></div>
+                        <div class="category-name">FRESH FRUITS</div>
+                    </div> -->
+                    <!-- <button class="next2" onclick="scrollRight()">&#10095;</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <h2>New Product</h2>
+            </div>
+            <div class="product">
+                <div class="product-list" id="product-list">
+                    <!-- <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/strawberry.webp');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/alba-strawberry.jpg');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/alpine-strawberry.jpg');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/camarosa-strawberry.jpg');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/pineberry.jpg');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/tochiotome-strawberry.jpg');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img" style="background-image: url('/images/fruits/wild-strawberry.jpg');"></div>
+                        <div class="product-name">Strawberry</div>
+                        <div class="product-info">
+                            <div class="product-price">10$</div>
+                            <div class="product-sold">100 sold</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="pagination">
+                    <button id="prev-button">&#10094;</button>
+                    <span id="page-info"></span>
+                    <button id="next-button">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>sss
+    </div>
+    <div class="footer">
+        aaaaaaaaa
+    </div>
+    <script src="/js/home.js"></script>
+</body>
+</html>

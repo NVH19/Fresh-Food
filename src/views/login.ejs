@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="icon" href="/images/icon_ff.jpg" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div id="message">
+    
+    </div>
+    <div class="login" id="login">
+        <div class="left_logo">
+            
+        </div>
+        <div class="right_login">
+            <div class="form">
+                <form id="loginForm">
+                    <h1>Login</h1>
+                    <div class="account">
+                        <label for="" style="color: #424242; margin-top: 2px;">Phone Number*</label><br>
+                        <input type="text" required id="phoneNumberUser" name="phoneNumberUser" placeholder="Số điện thoại"><br>
+                        <div id="phoneNumber-error" class="error-message"></div>
+                    </div>
+                    <div class="account">
+                        <label for="" style="color: #424242; margin-top: 2px;">Password*</label><br>
+                        <input type="password" required id="passwordUser" name="passwordUser" placeholder="Mật khẩu"><br>
+                        <div id="password-error" class="error-message"></div>
+                    </div>
+                    <div class="forgot">
+                        <span onclick="openResetPass()" style="cursor: pointer;">Forget Password?</span>
+                    </div>
+                    <button type="submit" style="margin-top: 10px;">Login</button>
+                    <div class="wrap">
+                        <div class="text">OR</div>
+                    </div>
+                    <div class="other">
+                        <div class="facebook">
+                            <i class="bx bxl-facebook icon"></i>
+                            <span>Facebook</span>
+                        </div>
+                        <div class="google">
+                            <i class="bx bxl-google icon"></i>
+                            <span">Google</span>
+                        </div>
+                    </div>
+                    <div class="register">
+                        <p>Don't have an account? <a href="signUp">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="resetPass" id="confirmPhone">
+        <div class="content">
+            <span class="close-button" onclick="closeResetPass()">&times;</span>
+            <h2 style="color: #222; font-size: 1.25rem; text-align: center; padding-bottom: 10px;">Đặt lại mật khẩu</h2>
+            <span>Nhập SĐT bạn đã đăng ký!</span>
+            <input type="text" placeholder="Nhập số điện thoại"><br>
+            <button type="submit" onclick="confirmOTP()" style="margin-top: 15px;">Tiếp theo</button>
+        </div>
+    </div>
+    <div class="resetPass" id="confirmOTP">
+        <div class="content">
+            <span class="close-button" onclick="closeResetPass()">&times;</span>
+            <h2 style="color: #222; font-size: 1.25rem; text-align: center; padding-bottom: 10px;">Đặt lại mật khẩu</h2>
+            <span>Nhập mã OTP</span>
+            <input type="text" maxlength="4" placeholder="Nhập mã OTP"><br>
+            <button type="submit" onclick="resetPass()" style="margin-top: 15px;">Tiếp theo</button>
+        </div>
+    </div>
+    <div class="resetPass" id="resetPass">
+        <div class="content">
+            <span class="close-button" onclick="closeResetPass()">&times;</span>
+            <h2 style="color: #222; font-size: 1.25rem; text-align: center; padding-bottom: 10px;">Đặt lại mật khẩu</h2>
+            <span>Nhập mật khẩu mới</span>
+            <input type="text" placeholder="Nhập mật khẩu"><br>
+            <span>Xác nhận mật khẩu</span>
+            <input type="text" placeholder="Nhập mật khẩu"><br>
+            <button type="submit" onclick="closeResetPass()" style="margin-top: 15px;">Xác nhận</button>
+        </div>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>

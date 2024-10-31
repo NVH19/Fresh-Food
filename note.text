@@ -1,0 +1,20 @@
+//install ejs: npm i ejs
+template engine cho express 
+
+//install nodemon: npm i nodemon
+tự động restart server khi có thay đổi
+
+//install sequelize: npm i sequelize
+ORM cho nodejs, giúp tương tác với cơ sở dữ liệu dễ dàng hơn
+
+//install sequelize-cli: npm install --save-dev sequelize-cli, npx sequelize-cli init
+giúp thao tác tạo, cập nhật database nhanh, dễ dàng
+
+//install bcryptjs: npm i bcryptjs
+hash password
+
+// Create table
+npx sequelize-cli model:generate --name Exam --attributes firstName:string,lastName:string,email:string
+
+// Update DB
+npx sequelize-cli db:migrate

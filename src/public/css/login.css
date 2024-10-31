@@ -1,0 +1,228 @@
+*{
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+.login{
+    display: flex; /* cho các phần tử thẳng hàng */
+}
+.left_logo{
+    width: 60%;
+    padding: 10px;
+    /* background-image: url('../images/freshFood.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    box-sizing: border-box; /* giúp padding không làm tăng kích thước thẻ div */
+}
+.right_login{
+    width: 40%;
+    box-sizing: border-box;
+    background-color: bisque;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.form{
+    width: 70%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 25px;
+    position: relative;
+}
+.form h1{
+    color: #222;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+input,button{
+    width: 100%;
+    height: 40px;
+    margin: 4px 0px 1px 0px;
+    border: none;
+    border-radius: 12px;
+}
+button{
+    background-color: #6CB937;
+    color: wheat;
+    cursor: pointer;
+}
+input{
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+.form .forgot{
+    float: right;
+    font-size: .85rem;
+    text-decoration-line: underline;
+    color: #05a;
+}
+
+.form p{
+    text-align: center;
+    margin-top: 10px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    margin: 24px 0px 20px 0px;
+    color: #999;
+    font-size: 14px;
+    border: 0 solid #999;
+}
+.wrap .text{
+    font-size: 13px;
+    margin: 0px 5px;
+}
+.wrap::before, .wrap::after{
+    flex: auto;
+    display: block;
+    content: "";
+    border-style: inherit;
+    border-color: inherit;
+    border-width: 1px 0 0;
+}
+.form .other{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.facebook,.google{
+    width: 50%;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.other .icon{
+    position: relative;
+    top: 1.5px;
+}
+a{
+    text-decoration: none;
+    background-color: initial;
+    color: #05a;
+}
+.register{
+    margin-top: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.resetPass {
+    display: none;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 13px;
+    display: inline-block;
+}
+
+
+#message{
+    z-index: 1000;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+.message{
+    width: 260px;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 2px;
+    border-left: 3px solid;
+    padding: 8px 0px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transition: all linear .3s;
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(calc(100% ));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+}
+.message__icon, .message__close{
+    padding: 0px 10px;
+}
+.message__icon{
+    font-size: 18px;
+}
+.message__close{
+    color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.message__body{
+    flex-grow: 1; /* biểu trưng diện tích mà 1 phần tử có thể chiếm thêm trong không gian trống*/
+}
+.message__title{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500px;
+}
+.message__content{
+    font-size: 14px;
+    color: #514f4f;
+}
+.success{
+    border-color: #47d864;
+}
+.success .message__icon{
+    color: #47d864;
+}
+.error{
+    border-color: #ff623d;
+}
+.error .message__icon{
+    color: #ff623d;
+}
+.warning{
+    border-color: #ffc021;
+}
+.warning .message__icon{
+    color: #ffc021;
+}
